@@ -6,7 +6,7 @@ This project is **not** a simple packaging of desktop Visual Studio Code / Elect
 
 ## Current Status
 
-**Phase 02 — Mobile Shell + Code - OSS Web Workbench POC** (in progress)
+**Phase 02 — Mobile Shell + Code - OSS Web Workbench POC** — **COMPLETE**
 
 See:
 
@@ -31,6 +31,7 @@ Mobile app (UI) → Code - OSS Web Workbench → Mobile IDE Gateway → Remote D
 - **Technology:** Capacitor + Vite + TypeScript
 - **POC workbench:** https://vscode.dev loaded in WebView/iframe
 - **Run web POC:** `cd mobile && npm install && npm run dev`
+- **Native setup:** `cd mobile && ./scripts/setup-native.sh`
 - **Smoke:** `cd mobile && npm run smoke`
 
 ## Repository Layout
@@ -42,7 +43,7 @@ my-mobile-ide/
 ├── docs/
 │   ├── architecture/
 │   └── phases/
-├── mobile/          # Capacitor shell (Phase 02)
+├── mobile/          # Capacitor shell (Phase 02 COMPLETE)
 ├── web/
 ├── gateway/
 ├── runtime/

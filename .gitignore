@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build / cache
+dist/
+out/
+build/
+.cache/
+*.tsbuildinfo
+.turbo/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Logs / coverage
+logs/
+*.log
+coverage/
+.nyc_output/
+
+# Mobile
+mobile/**/Pods/
+mobile/**/build/
+*.apk
+*.aab
+*.ipa
+*.dSYM.zip
+DerivedData/
+
+# Temporary research clones (do not commit full Code - OSS trees)
+code-oss-*/
+vscode/
+
+# OS
+Thumbs.db

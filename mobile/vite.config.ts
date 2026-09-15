@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  // Relative base required for Capacitor file:// / local server loading
   base: "./",
   server: {
     port: 5173,

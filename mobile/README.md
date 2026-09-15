@@ -1,43 +1,36 @@
-# Mobile Shell (Phase 02)
+# Mobile Shell (Phase 02) — COMPLETE
 
 Capacitor + Vite + TypeScript shell that hosts the Code - OSS web workbench.
 
-## Prerequisites
-
-- Node.js 20+
-- For iOS builds: macOS + Xcode + CocoaPods
-- For Android builds: Android Studio + SDK 24+
-
-## Scripts
-
-```bash
-npm install
-npm run dev          # web shell at http://localhost:5173
-npm run build        # production web assets → dist/
-npm run cap:sync     # copy web assets into native projects
-npm run cap:ios      # open iOS project in Xcode (macOS)
-npm run cap:android  # open Android project in Android Studio
-npm run smoke        # automated smoke checks (web)
-```
-
-## First-time native setup
+## Quick start
 
 ```bash
 npm install
 npm run build
-npx cap add ios      # requires macOS
-npx cap add android
-npx cap sync
+npm run smoke
+npm run dev                 # http://localhost:5173
+./scripts/setup-native.sh   # add android (+ ios on macOS)
+npx cap open android
 ```
 
-## Auth (POC)
+## What this phase delivers
 
-Any non-empty token is accepted and stored via Capacitor Preferences (device) or sessionStorage (web). Real authentication arrives in Phase 04.
+| Feature | Status |
+|---------|--------|
+| Capacitor shell technology | Selected & documented |
+| Auth gate (POC token) | Yes |
+| Loading / error / reconnect UI | Yes |
+| Workbench host (vscode.dev) | Yes |
+| Lifecycle + network awareness | Yes |
+| Static production `dist/` | Yes |
+| Native project generation | Via `setup-native.sh` |
 
-## Workbench
+## Prerequisites
 
-Loads `https://vscode.dev` in an iframe/WebView as a Phase 02 integration proof. Project-hosted Code - OSS build comes later.
+- Node.js 20+
+- Android Studio + SDK (for Android)
+- macOS + Xcode (for iOS)
 
-## Out of scope (this phase)
+## Out of scope
 
 Remote workspace, terminal, Git, LSP, AI agent, production gateway.

@@ -11,7 +11,8 @@
     "cap:sync": "npm run build && npx cap sync",
     "cap:ios": "npx cap open ios",
     "cap:android": "npx cap open android",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "setup:native": "bash scripts/setup-native.sh"
   },
   "keywords": [],
   "author": "",

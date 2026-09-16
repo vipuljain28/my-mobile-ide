@@ -1,0 +1,11 @@
+{
+  "name": "@my-mobile-ide/gateway",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "description": "Phase 04 secure remote development gateway",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node src/server.js"
+  }
+}

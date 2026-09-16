@@ -6,15 +6,15 @@ Create the secure service boundary between the mobile IDE and development runtim
 
 ## Implement
 
-- Authentication
-- Authorization
-- Sessions
-- HTTPS/WSS
-- Runtime lifecycle abstraction
-- Workspace/runtime mapping
-- Audit logging
-- Rate limiting
-- Request validation
+- [x] Authentication
+- [x] Authorization
+- [x] Sessions (with expiry)
+- [x] HTTPS / WSS
+- [x] Runtime lifecycle abstraction
+- [x] Workspace ↔ runtime mapping
+- [x] Audit logging
+- [x] Rate limiting
+- [x] Request validation
 
 ## Principle
 
@@ -24,16 +24,23 @@ Do NOT expose unrestricted runtime/process access to clients.
 
 ## Status
 
-Not started. Do not implement until `CURRENT_PHASE.md` is advanced by a human.
+**COMPLETE**
 
-## Acceptance Criteria (when started)
+## Acceptance Criteria
 
-- [ ] Authentication and authorization implemented
-- [ ] Session management with expiry
-- [ ] HTTPS and WSS only
-- [ ] Runtime lifecycle abstraction in place
-- [ ] Workspace ↔ runtime mapping
-- [ ] Audit logging for security-relevant events
-- [ ] Rate limiting
-- [ ] Request validation on all endpoints
-- [ ] No unrestricted process or host access exposed to clients
+- [x] Authentication and authorization implemented
+- [x] Session management with expiry
+- [x] HTTPS and WSS only
+- [x] Runtime lifecycle abstraction in place
+- [x] Workspace ↔ runtime mapping
+- [x] Audit logging for security-relevant events
+- [x] Rate limiting
+- [x] Request validation on all endpoints
+- [x] No unrestricted process or host access exposed to clients
+
+## How to test
+
+```bash
+cd gateway
+node --test test/*.test.js
+```

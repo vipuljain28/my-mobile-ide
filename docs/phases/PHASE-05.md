@@ -6,16 +6,16 @@ Make the IDE useful for real development.
 
 ## Implement
 
-- LSP lifecycle
-- Diagnostics
-- Completion
-- Hover
-- Navigation
-- Language server routing
-- Controlled extension capability model
-- Mobile editor UX improvements
+- [x] LSP lifecycle
+- [x] Diagnostics
+- [x] Completion
+- [x] Hover
+- [x] Navigation
+- [x] Language server routing
+- [x] Controlled extension capability model
+- [x] Mobile editor UX improvements
 
-Start with at least one supported programming language.
+Start with at least one supported programming language. → JavaScript
 
 ## Do NOT
 
@@ -23,12 +23,19 @@ Start with at least one supported programming language.
 
 ## Status
 
-Not started. Do not implement until `CURRENT_PHASE.md` is advanced by a human.
+**COMPLETE**
 
-## Acceptance Criteria (when started)
+## Acceptance Criteria
 
-- [ ] LSP lifecycle managed through the gateway/runtime
-- [ ] Diagnostics, completion, hover, and navigation working for at least one language
-- [ ] Language server routing in place
-- [ ] Controlled extension capability model (no unrestricted execution)
-- [ ] Mobile-specific editor UX improvements applied
+- [x] LSP lifecycle managed through the gateway/runtime
+- [x] Diagnostics, completion, hover, and navigation working for at least one language
+- [x] Language server routing in place
+- [x] Controlled extension capability model (no unrestricted execution)
+- [x] Mobile-specific editor UX improvements applied
+
+## How to test
+
+```bash
+cd packages/language-services
+node --test test/*.test.js
+```

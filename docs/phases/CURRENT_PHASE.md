@@ -1,7 +1,7 @@
 # Current Phase
 
-**PHASE 05 — Editor + Language Services + Extensions**
+**PHASE 06 — Terminal + Git + Build + Test**
 
 Status: **COMPLETE**
 
-Do not advance to Phase 06 until a human explicitly updates this file.
+Do not advance to Phase 07 until a human explicitly updates this file.

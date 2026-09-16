@@ -1,7 +1,7 @@
 # Current Phase
 
-**PHASE 02 — Mobile Shell + Code - OSS Web Workbench POC**
+**PHASE 03 — Workspace + Filesystem Bridge**
 
 Status: **COMPLETE**
 
-Do not advance to Phase 03 until a human explicitly updates this file.
+Do not advance to Phase 04 until a human explicitly updates this file.

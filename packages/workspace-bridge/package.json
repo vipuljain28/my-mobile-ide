@@ -1,0 +1,12 @@
+{
+  "name": "@my-mobile-ide/workspace-bridge",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Phase 03 secure workspace filesystem bridge",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node src/server.js"
+  }
+}
